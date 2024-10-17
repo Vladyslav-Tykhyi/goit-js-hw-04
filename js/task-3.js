@@ -10,13 +10,15 @@ const profile = {
   username: "Jacob",
   playTime: 300,
   changeUsername(newName) {
-    if (this.username.hasOwnProperty) {
+    if (this.username) {
       this.username = newName;
+      console.log(this.username);
     }
   },
   updatePlayTime(hours) {
-    if (this.playTime.hasOwnProperty) {
+    if (this.playTime) {
       this.playTime += hours;
+      console.log(this.playTime);
     }
   },
   getInfo() {
